@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Оформление заявки — TechStore</title>
+    <meta
+        name="description"
+        content="Оформление заявки на покупку электроники в TechStore."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+
+        <a class="logo" href="index.html">
+            TechStore
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+
+            <a class="nav__link" href="index.html">
+                Главная
+            </a>
+
+            <a class="nav__link" href="catalog.html">
+                Каталог
+            </a>
+
+            <a class="nav__link" href="product.html">
+                Товар
+            </a>
+
+            <a class="nav__link nav__link--active" href="order.html">
+                Заказать
+            </a>
+
+            <a class="nav__link" href="contacts.html">
+                Контакты
+            </a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+        <div class="container">
+
+            <p class="hero__subtitle">
+                TechStore
+            </p>
+
+            <h1 class="page-hero__title">
+                Оформление заявки
+            </h1>
+
+            <p class="page-hero__description">
+                Заполните форму, и наш специалист свяжется
+                с вами для уточнения деталей заказа.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="order">
+        <div class="container">
+
+            <div class="order__layout">
+
+                <div class="order__info">
+
+                    <h2 class="order__title">
+                        Оставьте заявку
+                    </h2>
+
+                    <p class="order__description">
+                        Укажите свои контактные данные и выберите
+                        интересующий товар.
+                    </p>
+
+                    <div class="order__advantages">
+
+                        <article class="advantage-card">
+
+                            <h3 class="advantage-card__title">
+                                Быстро
+                            </h3>
+
+                            <p class="advantage-card__text">
+                                Обрабатываем заявки в кратчайшие сроки.
+                            </p>
+
+                        </article>
+
+                        <article class="advantage-card">
+
+                            <h3 class="advantage-card__title">
+                                Удобно
+                            </h3>
+
+                            <p class="advantage-card__text">
+                                Вы можете выбрать удобный способ связи.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <form class="order-form" action="#" method="post">
+
+                    <div class="form__group">
+
+                        <label class="form__label" for="name">
+                            Имя
+                        </label>
+
+                        <input
+                            class="form__input"
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Введите ваше имя"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form__group">
+
+                        <label class="form__label" for="phone">
+                            Телефон
+                        </label>
+
+                        <input
+                            class="form__input"
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+7 (___) ___-__-__"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form__group">
+
+                        <label class="form__label" for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            class="form__input"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@mail.ru"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form__group">
+
+                        <label class="form__label" for="product">
+                            Товар
+                        </label>
+
+                        <select
+                            class="form__input"
+                            id="product"
+                            name="product"
+                            required
+                        >
+
+                            <option value="">
+                                Выберите товар
+                            </option>
+
+                            <option value="smartphone-pro-x">
+                                Смартфон Pro X
+                            </option>
+
+                            <option value="smartphone-lite">
+                                Смартфон Lite
+                            </option>
+
+                            <option value="laptop-air-15">
+                                Ноутбук Air 15
+                            </option>
+
+                            <option value="notebook-pro-16">
+                                Notebook Pro 16
+                            </option>
+
+                            <option value="sound-pro">
+                                Sound Pro
+                            </option>
+
+                            <option value="sound-mini">
+                                Sound Mini
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form__group">
+
+                        <label class="form__label" for="quantity">
+                            Количество
+                        </label>
+
+                        <input
+                            class="form__input"
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="10"
+                            value="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <fieldset class="form__fieldset">
+
+                        <legend class="form__legend">
+                            Предпочтительный способ связи
+                        </legend>
+
+                        <label class="form__radio">
+
+                            <input
+                                type="radio"
+                                name="contact"
+                                value="phone"
+                                checked
+                            >
+
+                            Телефон
+
+                        </label>
+
+
+                        <label class="form__radio">
+
+                            <input
+                                type="radio"
+                                name="contact"
+                                value="email"
+                            >
+
+                            E-mail
+
+                        </label>
+
+                    </fieldset>
+
+
+                    <div class="form__group">
+
+                        <label class="form__label" for="comment">
+                            Комментарий
+                        </label>
+
+                        <textarea
+                            class="form__input form__textarea"
+                            id="comment"
+                            name="comment"
+                            rows="5"
+                            placeholder="Дополнительная информация..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <label class="form__checkbox">
+
+                        <input
+                            type="checkbox"
+                            name="agreement"
+                            required
+                        >
+
+                        <span>
+                            Я согласен на обработку указанных данных.
+                        </span>
+
+                    </label>
+
+
+                    <button class="button form__button" type="submit">
+                        Отправить заявку
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer__inner">
+
+        <p class="footer__copyright">
+            © 2026 TechStore
+        </p>
+
+        <a class="footer__link" href="#">
+            Наверх
+        </a>
+
+    </div>
+</footer>
+
+</body>
+</html>

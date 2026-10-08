@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore — интернет-магазин электроники</title>
+    <meta
+        name="description"
+        content="TechStore — интернет-магазин современной электроники."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+
+        <a class="logo" href="index.html">
+            TechStore
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <a class="nav__link nav__link--active" href="index.html">
+                Главная
+            </a>
+
+            <a class="nav__link" href="catalog.html">
+                Каталог
+            </a>
+
+            <a class="nav__link" href="product.html">
+                Товар
+            </a>
+
+            <a class="nav__link" href="order.html">
+                Заказать
+            </a>
+
+            <a class="nav__link" href="contacts.html">
+                Контакты
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="about">
+        <div class="container hero__content">
+
+            <div class="hero__text">
+                <p class="hero__subtitle">
+                    Интернет-магазин электроники
+                </p>
+
+                <h1 class="hero__title">
+                    Технологии, которые делают жизнь удобнее
+                </h1>
+
+                <p class="hero__description">
+                    Смартфоны, ноутбуки, наушники и другие современные
+                    устройства в одном месте.
+                </p>
+
+                <a class="button" href="catalog.html">
+                    Перейти в каталог
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+        <div class="container">
+
+            <h2 class="section-title">
+                Почему выбирают нас
+            </h2>
+
+            <div class="advantages__list">
+
+                <article class="advantage-card">
+                    <h3 class="advantage-card__title">
+                        Большой выбор
+                    </h3>
+
+                    <p class="advantage-card__text">
+                        Популярная электроника для работы, учёбы и отдыха.
+                    </p>
+                </article>
+
+                <article class="advantage-card">
+                    <h3 class="advantage-card__title">
+                        Доступные цены
+                    </h3>
+
+                    <p class="advantage-card__text">
+                        Подбираем товары с оптимальным соотношением
+                        цены и характеристик.
+                    </p>
+                </article>
+
+                <article class="advantage-card">
+                    <h3 class="advantage-card__title">
+                        Удобный заказ
+                    </h3>
+
+                    <p class="advantage-card__text">
+                        Оформить заявку можно быстро и без лишних действий.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products" id="popular">
+        <div class="container">
+
+            <h2 class="section-title">
+                Популярные товары
+            </h2>
+
+            <div class="products__grid">
+
+                <article class="product-card">
+                    <div class="product-card__image">
+                        📱
+                    </div>
+
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">
+                            Смартфон Pro X
+                        </h3>
+
+                        <p class="product-card__description">
+                            Современный смартфон для работы,
+                            общения и развлечений.
+                        </p>
+
+                        <p class="product-card__price">
+                            49 990 ₽
+                        </p>
+
+                        <a class="button button--secondary" href="product.html">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__image">
+                        💻
+                    </div>
+
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">
+                            Ноутбук Air 15
+                        </h3>
+
+                        <p class="product-card__description">
+                            Лёгкий ноутбук для учёбы, работы
+                            и повседневных задач.
+                        </p>
+
+                        <p class="product-card__price">
+                            79 990 ₽
+                        </p>
+
+                        <a class="button button--secondary" href="product.html">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__image">
+                        🎧
+                    </div>
+
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">
+                            Наушники Sound Pro
+                        </h3>
+
+                        <p class="product-card__description">
+                            Беспроводные наушники с качественным
+                            звуком и удобной посадкой.
+                        </p>
+
+                        <p class="product-card__price">
+                            12 990 ₽
+                        </p>
+
+                        <a class="button button--secondary" href="product.html">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container cta__content">
+
+            <h2 class="cta__title">
+                Хотите оформить заказ?
+            </h2>
+
+            <p class="cta__text">
+                Оставьте заявку, и мы свяжемся с вами.
+            </p>
+
+            <a class="button" href="order.html">
+                Оформить заявку
+            </a>
+
+        </div>
+    </section>
+
+</main>
+    <!-- Модальное окно -->
+    <dialog class="modal" id="request-modal">
+
+        <div class="modal__content">
+
+            <button
+                class="modal__close"
+                type="button"
+                data-modal-close
+                aria-label="Закрыть окно"
+            >
+                ×
+            </button>
+
+            <h2 class="modal__title">
+                Быстрая заявка
+            </h2>
+
+            <p class="modal__text">
+                Оставьте свои контактные данные,
+                и мы свяжемся с вами.
+            </p>
+
+            <form class="modal__form">
+
+                <div class="form__group">
+
+                    <label class="form__label" for="modal-name">
+                        Имя
+                    </label>
+
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="modal-name"
+                        name="name"
+                        placeholder="Ваше имя"
+                        required
+                    >
+
+                </div>
+
+                <div class="form__group">
+
+                    <label class="form__label" for="modal-phone">
+                        Телефон
+                    </label>
+
+                    <input
+                        class="form__input"
+                        type="tel"
+                        id="modal-phone"
+                        name="phone"
+                        placeholder="+7 (999) 123-45-67"
+                        required
+                    >
+
+                </div>
+
+                <button class="button" type="submit">
+                    Отправить заявку
+                </button>
+
+            </form>
+
+        </div>
+
+    </dialog>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+
+        <p class="footer__copyright">
+            © 2026 TechStore
+        </p>
+
+        <a class="footer__link" href="#about">
+            Наверх
+        </a>
+
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
